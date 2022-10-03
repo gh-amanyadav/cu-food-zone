@@ -1,14 +1,13 @@
-const index = (props) => {
-    <div>
-        <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-            <h1>Hi</h1>
-            <h5 class="card-title">{props.name}</h5>
-            <p class="card-text">{props.location}</p>
-            <a href="#" class="btn btn-primary">View</a>
+const index = (props) => {   
+    return <div className={props.className}>
+        <div className="card">
+            <img src="/images/rest1.jpg" className="card-img-top" alt="..." />
+            <div className="card-body">
+                <h5 className="card-title">{props.name}</h5>
+                <p className="card-text">{props.location}</p>
+                <button type="button" className="btn btn-outline-warning">View More</button>
+            </div>
         </div>
-    </div>
     </div>
 }
 
